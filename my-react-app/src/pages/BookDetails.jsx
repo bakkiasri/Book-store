@@ -12,7 +12,7 @@ export default function BookDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/books/${id}`)
+      .get(`https://backend-repo-bookstore.onrender.com/api/books/${id}`)
       .then((res) => setBook(res.data));
   }, [id]);
 

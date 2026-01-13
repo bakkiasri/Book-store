@@ -11,7 +11,7 @@ export default function Home() {
     // ✅ Fetch only once
     if (books.length === 0) {
       axios
-        .get("http://localhost:5000/api/books")
+        .get("https://backend-repo-bookstore.onrender.com/api/books")
         .then((res) => setBooks(res.data));
     }
   }, [books, setBooks]);
